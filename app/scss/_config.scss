@@ -1,0 +1,34 @@
+$gilroyB: "Gilroy-Bold", sans-serif;
+$gilroyM: "Gilroy-Medium", sans-serif;
+
+@mixin font($fname, $fstyle, $furl) {
+	@font-face {
+		font-family: $fname;
+		font-style: $fstyle;
+		src: local($fname), url($furl) format('woff2');
+	}
+}
+
+@include font('Gilroy-Bold', bold, '../fonts/gilroy-bold.woff2');
+@include font('Gilroy-Medium', medium, '../fonts/gilroy-medium.woff2');
+
+@media (min-width: 950px) {
+	.container {
+        max-width: 950px;
+        margin: 0 auto;
+	}
+}
+@media (max-width: 768px){
+	body {
+		padding: 0 30px;
+		.container {
+			width: 100%;
+		}
+	}
+	
+}
+@mixin _767 {
+	@media (max-width: 767px) {
+		@content;
+	}
+}

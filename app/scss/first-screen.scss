@@ -1,0 +1,56 @@
+.first-screen {
+    padding: 88px 0 104px 0;
+    .content {
+        display: flex;
+        justify-content: space-between;
+        padding: 40px 0 30px 0;
+        .name {
+            font-family: $gilroyB;
+            font-size: 47px;
+        }
+        .information {
+            font-family: $gilroyM;
+            font-size: 18px;
+            padding: 50px 0 0 0;
+        }
+        .lang {
+            height: 16px;
+            margin: 40px -23px 0 40px;
+            font-family: $gilroyB;
+            font-size: 16px;
+            transform: rotate(-90deg);
+            div {
+                display: inline;
+                opacity: 0.5;
+            }
+        }
+    }
+    img {
+        width: 100%;
+    }
+    .image-mb {
+        display: none;
+    }
+    @include _767 {
+        padding: 36px 0 83px 0;
+        .content {
+            display: block;
+            padding: 50px 0 0 0;
+            .name {
+                padding-top: 20px;
+            }
+            .information {
+                padding: 25px 0 36px 0;
+            }
+            .lang {
+                display: none;
+            }
+        }
+        .image-des {
+            display: none;
+        }
+        .image-mb {
+            display: inline;
+        }
+    }
+}

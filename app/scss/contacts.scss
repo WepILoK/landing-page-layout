@@ -1,0 +1,64 @@
+.contacts {
+    text-align: center;
+    padding: 115px 0 125px 0;
+    .content {
+        .first-title {
+            padding: 38px 0 35px 0;
+        }
+        button {
+            background-color: #070707;
+            font-family: $gilroyB;
+            font-size: 18px;
+            color: #ffffff;
+            padding: 13px 30px;
+            border-radius: 35px;
+            &:hover {
+                opacity: 0.8;
+                transition: opacity .1s linear;
+            }
+            &:active {
+                opacity: 0.7;
+                transition: opacity .1s linear;
+            }
+        }
+        .links {
+            padding: 86px 0 45px 0;
+            a {
+                padding-left: 61px;
+                &:first-child {
+                    padding: 0;
+                }
+            }
+        }
+        .text {
+            font-family: $gilroyM;
+            font-size: 14px;
+            opacity: 0.5;
+        }
+    }
+    @include _767 {
+        padding: 82px 0 105px 0;
+        .content {
+        .first-title {
+            padding: 48px 0 35px 0;
+        }
+        button {
+            padding: 12px 67px;
+        }
+        .links {
+            padding: 48px 0 45px 0;
+            a {
+                padding-left: 25px;
+                &:first-child {
+                    padding: 0;
+                }
+            }
+        }
+        .text {
+            font-family: $gilroyM;
+            font-size: 14px;
+            opacity: 0.5;
+        } 
+    }
+    }  
+}
